@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Studio</title>
 </head>
@@ -15,21 +16,21 @@
     <body>
         <!--header start-->
         <header>
-            <div>
+            <div class="container container-header">
                 <nav>
                     <!--Company Info start-->                    
                     <a href="./index.html" class="studio-logo">WebStudio</a>                    
-                    <ul>
-                        <li><a href="./index.html" class="navigation-link current-page">Studio</a></li>
-                        <li><a href="./portfolio.html" class="navigation-link">Portfolio</a></li>
-                        <li><a href="#" class="navigation-link">Contacts</a></li>
+                    <ul class="navigation-list">
+                        <li class="navigation-item"><a href="./index.html" class="navigation-link current-page">Studio</a></li>
+                        <li class="navigation-item"><a href="./portfolio.html" class="navigation-link">Portfolio</a></li>
+                        <li class="navigation-item"><a href="#" class="navigation-link">Contacts</a></li>
                     </ul>                    
                 </nav>
                 <!--Company Info end-->
                 <!--Contacts info start-->
-                <ul>
-                    <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
-                    <li><a href="tel:+12127724150" class="contacts-link">+1 212-772-4150</a></li>
+                <ul class="header-contacts-list">
+                    <li class="header-contacts-item"><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
+                    <li class="header-contacts-item"><a href="tel:+12127724150" class="contacts-link">+1 212-772-4150</a></li>
                 </ul>
                 <!--Contacts info end-->
             </div>
@@ -38,17 +39,17 @@
         <!--main content start-->
         <main>
             <section class="solutions-main">
-                <div>
+                <div class="solutions-main-flex">
                     <h1 class="solutions-title">EFFECTIVE SOLUTIONS FOR <br/> YOUR BUSINESS</h1>
                     <button type="button" class="studio-button">Request our service</button>
                 </div>
             </section>
             <!--what the user can expect start-->
-            <section>
-                <div>
-                    <h2>What the user can expect</h2>
-                    <ul>
-                        <li>
+            <section class="section">
+                <div class="container">
+                    <h2 class="features-title-hide">What the user can expect</h2>
+                    <ul class="features-list">
+                        <li class="features-item">
                             <h3 class="features-title">ATTENTION TO DETAILS</h3>
                             <p class="features-description">We go into all the details and processes of your business to develop a customized solution.</p>
                         </li>
@@ -70,17 +71,17 @@
             </section>
             <!--what the user can expect end-->
             <!--what we do start-->
-            <section>
-                <div>
-                    <h2 class="section-about-our-work">What we do</h2>
-                    <ul>
-                        <li>
+            <section class="section-what-we-do">
+                <div class="container">
+                    <h2 class="title-about-our-work">What we do</h2>
+                    <ul class="what-we-do-list">
+                        <li class="what-we-do-item">
                             <img src="./images/what-we-do-1.jpg" alt="Desktop app UI" width="370" />
                         </li>
-                        <li>
+                        <li class="what-we-do-item">
                             <img src="./images/what-we-do-2.jpg" alt="Mobile app UI" width="370" />
                         </li>
-                        <li>
+                        <li class="what-we-do-item">
                             <img src="./images/what-we-do-3.jpg" alt="Design color palette" width="370" />
                         </li>
                     </ul>
@@ -89,28 +90,36 @@
             <!--what we do end-->
             <!--Our team start-->
             <section class="section-about-our-team-style">
-                <div>
-                    <h2 class="section-about-our-team">Our Team</h2>
-                    <ul>
-                        <li>
+                <div class="container">
+                    <h2 class="title-about-our-team">Our Team</h2>
+                    <ul class="about-our-team-list">
+                        <li class="about-our-team-item">
                             <img src="./images/our-team-chris.jpg" alt="Product Designer photo" width="270" />
+                            <div class="about-our-team-description">
                             <h3 class="employees-name">Christopher Walker</h3>
                             <p class="employees-position">Product Designer</p>
+                            </div>
                         </li>
-                        <li>
+                        <li class="about-our-team-item">
                             <img src="./images/our-team-kylie.jpg" alt="Frontend Developer photo" width="270" />
+                            <div class="about-our-team-description">
                             <h3 class="employees-name">Kylie Evans</h3>
                             <p class="employees-position">Frontend Developer</p>
+                            </div>
                         </li>
-                        <li>
+                        <li class="about-our-team-item">
                             <img src="./images/our-team-ryan.jpg" alt="Marketing photo" width="270" />
+                            <div class="about-our-team-description">
                             <h3 class="employees-name">Ryan Harris</h3>
                             <p class="employees-position">Marketing</p>
+                            </div>
                         </li>
-                        <li>
+                        <li class="about-our-team-item">
                             <img src="./images/our-team-tyler.jpg" alt="UI Designer photo" width="270" />
+                            <div class="about-our-team-description">
                             <h3 class="employees-name">Tyler Moore</h3>
                             <p class="employees-position">UI Designer</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -120,7 +129,7 @@
         <!--main content end-->
         <!--footer start-->
         <footer class="webstudio-footer">
-            <div>
+            <div class="container-footer">
                 <a href="./index.html" class="studio-logo">WebStudio</a>
                 <adress class="footer-address">
                     <ul>

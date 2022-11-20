@@ -1,11 +1,23 @@
-/* CSS for all website */
+/* CSS for all website pages */
 :root {
     --accent-color: #2196f3;
     --main-text-color: #212121;
     --main-title-color: #757575;
     --secondary-text-color: #757575;
-    --white-text-color: #ffffff;    
+    --white-text-color: #ffffff;
+    --secondary-background: #f5f4fa;
+    --borders-color: #ECECEC;   
     --footer-contact-color: rgba(255, 255, 255, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 body {
@@ -17,10 +29,17 @@ body {
 
 ul {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: var(--accent-color);
 }
 
 button {
@@ -29,6 +48,56 @@ button {
 
 button:hover, button:focus {
     background: var(--accent-color);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* header section start */
+
+header {
+    border-bottom: 1px solid var(--borders-color);
+}
+
+.container-header {
+    display: flex;
+    align-items: center;    
+}
+
+.header-contacts-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-contacts-item:not(last-child) {
+    margin-right: 50px;
+}
+
+/* header section end */
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* navigation section start */
+
+.navigation-list {
+    display: flex;    
+}
+
+.navigation-item:not(last-child) {
+    margin-right: 50px;
 }
 
 .navigation-link {
@@ -43,6 +112,8 @@ button:hover, button:focus {
     color: var(--accent-color);
 }
 
+/* navigation section end */
+
 .current-page {
     color: var(--accent-color);
 }
@@ -51,46 +122,15 @@ button:hover, button:focus {
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    padding: 32px 0;
     color: var(--secondary-text-color);
 }
 
 .contacts-link:hover, .contacts-link:focus {
     font-weight: 500;
     font-size: 14px;
-    line-height: calc(14/16);
-    color: var(--accent-color);
-}
-
-.webstudio-footer {
-    background-color: #2f303a;
-}
-
-.footer-address {
-    display: block;
-    font-style: normal;
-    color: var(--white-text-color);
-}
-
-.footer-address-link {   
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;
-    color: var(--white-text-color);
-}
-
-.footer-contacts-link {   
-    font-weight: 400;    
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;
-    color: var(--footer-contact-color);
-}
-
-.footer-contacts-link:hover, .footer-contacts-link:focus {
-    color: var(--accent-color);   
-}
-.footer-address-link:hover, .footer-address-link:focus {
+    line-height: calc(16/14);
     color: var(--accent-color);
 }
 
@@ -101,12 +141,22 @@ button:hover, button:focus {
     line-height: 31px;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    margin-right: 97px;
 }
 
-/* CSS for Studio page*/
+/* main section start */
 
 .solutions-main {
-    background-color: #2f303a;    
+    background-color: #2f303a;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.solutions-main-flex {
+    background-color: #2f303a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .solutions-title {
@@ -116,7 +166,9 @@ button:hover, button:focus {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--white-text-color)
+    width: 696px;
+    margin-bottom: 30px;
+    color: var(--white-text-color);
 }
 
 .studio-button {
@@ -127,19 +179,24 @@ button:hover, button:focus {
     text-align: center;
     letter-spacing: 0.06em;
     background-color: var(--accent-color);
-    color: var(--white-text-color);    
+    color: var(--white-text-color);
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
+    border-radius: 4px;
 }
 
 .studio-button:hover, .studio-button:focus {
     background-color: var(--accent-color);
 }
 
-.section-about-our-work {
+.title-about-our-work {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
     text-align: center;
-    letter-spacing: 0.03em;    
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;    
     color: var(--main-text-color);
 }
 
@@ -148,29 +205,89 @@ button:hover, button:focus {
     font-size: 14px;
     line-height: calc(16/14);
     text-transform: uppercase;
+    margin-bottom: 10px;
     color: var(--main-text-color);    
 }
 
-.features-description {    
-    font-size: 14px;
-    line-height: calc(24/14);
+.features-title-hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.features-list {
+    display: flex;
+    justify-content: center;
+}
+
+.features-item {
+    width: 270px;
+}
+
+.features-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.features-description {  
     font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);    
     letter-spacing: 0.03em;
     color: var(--main-title-color);
 }
 
-.section-about-our-team {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42/36);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-text-color);
+.section-what-we-do {
+    padding-top: 0;
+}
+
+.what-we-do-list {
+    display: flex;
+    justify-content: center;
+}
+
+.what-we-do-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .section-about-our-team-style {    
     background-color: #f5f4fa;
 }
+
+.title-about-our-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: var(--main-text-color);
+}
+
+.about-our-team-list {
+    display: flex;
+    justify-content: center;
+}
+
+.about-our-team-item {
+    width: 270px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 1px rgba(0,0,0,0.14), 0px 2px 1px rgba(0,0,0,0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.about-our-team-item:not(last-child) {
+    margin-right: 30px;
+}
+ .about-our-team-description {
+    padding: 30px 0px;
+ }
 
 .employees-name {
     font-weight: 500;
@@ -178,6 +295,7 @@ button:hover, button:focus {
     line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 
 .employees-position {
@@ -185,10 +303,11 @@ button:hover, button:focus {
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
+    letter-spacing: 0.03em;
     color:var(--secondary-text-color)
 }
 
-/* CSS for Portfolio page */
+/*Portfolio section start */
 
 .portfolio-buttons {   
     font-family: 'Roboto', sans-serif;    
@@ -197,6 +316,9 @@ button:hover, button:focus {
     line-height: calc(26/16);      
     text-align: center;
     letter-spacing: 0.03em;
+    padding: 6px 26px;
+    border: none;
+    border-radius: 4px;
     background-color: #f5f4fa;
     color: var(--main-text-color);    
     }
@@ -204,6 +326,37 @@ button:hover, button:focus {
 .portfolio-buttons:hover, .portfolio-buttons:focus {
     background-color: var(--accent-color);
     color: var(--white-text-color);
+}
+
+.portfolio-buttons-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-buttons-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio-images-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-images-item {
+    background: #ffffff;
+    margin-bottom: 30px;
+}
+
+.portfolio-images-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.card-info {
+    padding: 20px;
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
 }
 
 .project-title {
@@ -218,4 +371,48 @@ button:hover, button:focus {
     font-size: 16px;
     line-height: calc(30/16);
     color: var(--secondary-text-color);
+}
+
+/* footer section start */
+
+.webstudio-footer {
+    background-color: #2f303a;
+}
+
+.container-footer {
+    width: 1200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-address {
+    display: block;
+    font-style: normal;
+    color: var(--white-text-color);
+}
+
+.footer-address-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+}
+
+.footer-contacts-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: var(--footer-contact-color);
+}
+
+.footer-contacts-link:hover, .footer-contacts-link:focus {
+    color: var(--accent-color);
+}
+
+.footer-address-link:hover, .footer-address-link:focus {
+    color: var(--accent-color);
 }
