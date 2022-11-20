@@ -1,0 +1,221 @@
+/* CSS for all website */
+:root {
+    --accent-color: #2196f3;
+    --main-text-color: #212121;
+    --main-title-color: #757575;
+    --secondary-text-color: #757575;
+    --white-text-color: #ffffff;    
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    background: var(--accent-color);
+}
+
+.navigation-link {
+    font-weight: 500;
+    font-size:14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
+
+.navigation-link:hover, .navigation-link:focus {
+    color: var(--accent-color);
+}
+
+.current-page {
+    color: var(--accent-color);
+}
+
+.contacts-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    color: var(--secondary-text-color);
+}
+
+.contacts-link:hover, .contacts-link:focus {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(14/16);
+    color: var(--accent-color);
+}
+
+.webstudio-footer {
+    background-color: #2f303a;
+}
+
+.footer-address {
+    display: block;
+    font-style: normal;
+    color: var(--white-text-color);
+}
+
+.footer-address-link {   
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+}
+
+.footer-contacts-link {   
+    font-weight: 400;    
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: var(--footer-contact-color);
+}
+
+.footer-contacts-link:hover, .footer-contacts-link:focus {
+    color: var(--accent-color);   
+}
+.footer-address-link:hover, .footer-address-link:focus {
+    color: var(--accent-color);
+}
+
+.studio-logo {
+    font-family: 'raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+/* CSS for Studio page*/
+
+.solutions-main {
+    background-color: #2f303a;    
+}
+
+.solutions-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-text-color)
+}
+
+.studio-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--white-text-color);    
+}
+
+.studio-button:hover, .studio-button:focus {
+    background-color: var(--accent-color);
+}
+
+.section-about-our-work {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;    
+    color: var(--main-text-color);
+}
+
+.features-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-transform: uppercase;
+    color: var(--main-text-color);    
+}
+
+.features-description {    
+    font-size: 14px;
+    line-height: calc(24/14);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+}
+
+.section-about-our-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.section-about-our-team-style {    
+    background-color: #f5f4fa;
+}
+
+.employees-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.employees-position {
+    font-weight: 400;    
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    color:var(--secondary-text-color)
+}
+
+/* CSS for Portfolio page */
+
+.portfolio-buttons {   
+    font-family: 'Roboto', sans-serif;    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);      
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: #f5f4fa;
+    color: var(--main-text-color);    
+    }
+
+.portfolio-buttons:hover, .portfolio-buttons:focus {
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: 0.06em;
+}
+
+.project-type {  
+    font-weight: 400;  
+    font-size: 16px;
+    line-height: calc(30/16);
+    color: var(--secondary-text-color);
+}
