@@ -59,12 +59,16 @@ img {
 /* header section start */
 
 header {
+    height: 80px;
+    display: block;
     border-bottom: 1px solid var(--borders-color);
 }
 
 .container-header {
-    display: flex;
-    align-items: center;    
+    height: 80px;
+    display: flex;          
+    align-items: center;  
+    padding-left: 215px;  
 }
 
 .header-contacts-list {
@@ -134,14 +138,14 @@ header {
     color: var(--accent-color);
 }
 
-.studio-logo {
+.studio-logo {    
     font-family: 'raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-    margin-right: 97px;
+    letter-spacing: 0.03em;      
+    margin-right: 97px;      
+    color: var(--accent-color);    
 }
 
 /* main section start */
@@ -244,7 +248,7 @@ header {
 }
 
 .section-what-we-do {
-    padding-top: 0;
+    padding-top: 0px;
 }
 
 .what-we-do-list {
@@ -256,7 +260,9 @@ header {
     margin-right: 30px;
 }
 
-.section-about-our-team-style {    
+.section-about-our-team {   
+    padding-top: 0px; 
+    height: 648px;
     background-color: #f5f4fa;
 }
 
@@ -266,6 +272,8 @@ header {
     line-height: calc(42/36);
     text-align: center;
     letter-spacing: 0.03em;
+    padding-top: 94px;
+    margin-top: 94px;
     margin-bottom: 50px;
     color: var(--main-text-color);
 }
@@ -282,7 +290,7 @@ header {
     border-radius: 0px 0px 4px 4px;
 }
 
-.about-our-team-item:not(last-child) {
+.about-our-team-item:not(:last-child) {
     margin-right: 30px;
 }
  .about-our-team-description {
@@ -331,6 +339,7 @@ header {
 .portfolio-buttons-list {
     display: flex;
     justify-content: center;
+    margin-top: 94px;
     margin-bottom: 50px;
 }
 
@@ -383,7 +392,7 @@ header {
     width: 1200px;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 15px;
+    padding-left: 215px;
     padding-right: 15px;
 }
 
