@@ -5,3 +5,4 @@ Changes:
 * classifying photos into studio and portfolio folders
 * photo optimization
 * reorganization of css code into sections according to page design (from top to bottom)
+* Minor changes in the logo and portfolio items
